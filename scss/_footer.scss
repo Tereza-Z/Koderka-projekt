@@ -1,0 +1,72 @@
+.footer {
+    max-height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.926);  
+    color: rgb(172, 172, 172);
+    font-family: "Mulish", "sans-serif";
+    word-wrap: break-word;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 10px;
+    justify-items: center;
+    
+    @media screen and (min-width: 650px) and (max-width: 1270px){
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    @media screen and (min-width: 1270px){
+        padding: 70px;
+    }
+
+    @media screen and (max-width: 1270px){
+        padding: 20px;
+    }
+}
+
+.footer input {
+    max-width: 100%;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    padding: 8px;
+    background-color: rgb(209, 209, 209);
+}
+
+.footer button{ 
+    background-color: rgb(48, 48, 48);
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    color: rgb(195, 166, 0);
+    font-size: 16px;
+    justify-self: stretch;
+    padding: 10px;
+}
+
+/*LINKS*/
+
+.footer__instagram::before {
+    content: url(/images/footer/icons8-instagram-48.png);
+}
+
+.footer__twitter::before {
+    content: url(/images/footer/icons8-twitter-48.png);
+}
+
+.footer__tiktok::before {
+    content: url(/images/footer/icons8-tiktok-48.png);
+}
+
+.footer__snapchat::before {
+    content: url(/images/footer/icons8-snapchat-48.png);
+}
+
+.footer__links {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 100%;
+    justify-items: center;
+    gap: 30px;
+    @media screen and (min-width: 650px) and (max-width: 1270px){
+        max-width: 50vw;
+    }
+}

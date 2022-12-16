@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lorem Ipsum Teahouse</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri&display=swap" rel="stylesheet">
+
+<body>
+
+    <header class ="header">
+        <nav class="header__menu">
+                <div class="menu__logo">
+                    <img class="logo" src="/images/logo.png" alt="logo">       
+                </div>
+                <div class="menu__items">
+                    <li class="menu__item"><a href="/" class="menu__link {% if page.url === '/' %} active {% endif %}">O nás</a></li>
+                    <li class="menu__item"><a href="/ocaji/" class="menu__link {% if page.url === '/ocaji/' %} active {% endif %}">O čaji</a></li>
+                    <li class="menu__item"><a href="/listek/" class="menu__link {% if page.url === '/listek/' %} active {% endif %}">Nabídka</a></li>
+                    <li class="menu__item"><a href="/rezervace/" class="menu__link {% if page.url === '/rezervace/' %} active {% endif %}">Rezervace</a></li>
+                </div>
+        </nav>   
+    </header>
+
+    <div class="main">
+        <div class="wrapper__ocaji">
+        {{content | safe}}
+        </div>
+    </div>
+
+    <footer class ="footer">
+
+        <div class="footer__newsletter">Pokud chcete dostávat pravidelné info o novinkách, akcích a slevách
+            v naší čajovně, odebírejte náš newsletter:
+        </div>
+
+        <input class="footer__input" type="text" id="mail" size="50" maxlength="30" placeholder="E-mailová adresa" required>
+            
+        <button class ="sumbit">Odebírat</button>
+
+        <div class="footer__links">
+            <a class="footer__instagram" href="https://www.instagram.com/"></a>
+            <a class="footer__twitter" href="https://twitter.com/"></a>
+            <a class="footer__tiktok" href="https://www.tiktok.com"></a>
+            <a class="footer__snapchat" href="https://www.snapchat.com/"></a>
+        </div>
+
+    </footer>
+
+</body>
+</html>

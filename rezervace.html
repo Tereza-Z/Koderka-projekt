@@ -1,0 +1,173 @@
+---
+layout: sablona_ostatni.njk
+title: Rezervace
+---
+
+<div class="reservation">
+
+    <h1>Nabídka čajů k rezervaci</h1>
+    
+    <div class="reservation__items">
+
+        <div class="reservation__item">
+            
+            <div class="reservation__image">
+                <img class="image" src="/images/rezervace/red_jocelyn-morales-mUrewiMZRro-unsplash.jpg">
+                <h3>Červený čaj</h3>
+            </div>
+            
+            <div class="reservation__description">
+                <p>Tento čaj je výborný.</p>
+            </div>
+
+            <div class="reservation__price">
+                <p> 
+                    45,- Kč / 10g <br>
+                    225,- Kč / 50g <br>
+                    450,- Kč / 100g
+                </p>
+            </div>
+        </div>
+
+        <div class="reservation__item">
+            
+            <div class="reservation__image">
+                <img class="image" src="/images/rezervace/green_jocelyn-morales-hOdPVWwaMek-unsplash.jpg">
+                <h3>Zelený čaj</h3>
+            </div>
+            
+            <div class="reservation__description">
+                <p>Tento čaj je výborný.</p>
+            </div>
+
+            <div class="reservation__price">
+                <p> 
+                    45,- Kč / 10g <br>
+                    225,- Kč / 50g <br>
+                    450,- Kč / 100g
+                </p>
+            </div>
+        </div>
+
+        <div class="reservation__item">
+            
+            <div class="reservation__image">
+                <img class="image" src="/images/rezervace/white_jocelyn-morales-oRJihb0QTBw-unsplash.jpg">
+                <h3>Bílý čaj</h3>
+            </div>
+            
+            <div class="reservation__description">
+                <p>Tento čaj je výborný.</p>
+            </div>
+
+            <div class="reservation__price">
+                <p> 
+                    45,- Kč / 10g <br>
+                    225,- Kč / 50g <br>
+                    450,- Kč / 100g
+                </p>
+            </div>
+        </div>
+
+        <div class="reservation__item">
+            
+            <div class="reservation__image">
+                <img class="image" src="/images/rezervace/oolong_petr-sidorov-gT_rAfFvCyw-unsplash.jpg">
+                <h3>Oolong</h3>
+            </div>
+            
+            <div class="reservation__description">
+                <p>Tento čaj je výborný.</p>
+            </div>
+
+            <div class="reservation__price">
+                <p> 
+                45,- Kč / 10g <br>
+                225,- Kč / 50g <br>
+                450,- Kč / 100g
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<div class="form">
+    
+        <h1 class="form__headline">Rezervace</h1>
+        <p>Prostřednictvím následujícího formuláře si můžete zarezervovat čaj k vyzvednutí na naší prodejně. 
+            Stačí vyplnit jméno a kontaktní údaje a do pole s názvem "Detaily nákupu" uvést druh čaje a množství k rezervaci.
+        </p>
+
+    <div class="form__description">
+
+        <div class="description__box">
+            <div class="description__icon">
+                <img src="/images/rezervace/icons8-checkmark-64.png">
+            </div>
+            <p>
+            Rezervace, které jsou k vyzvednutí následující pracovní den, jsou z kapacitních důvodů omezené na maximálně
+            100g čaje. 
+            </p>
+        </div>
+
+        <div class="description__box">
+            <div class="description__icon">
+                <img src="/images/rezervace/icons8-checkmark-64.png">
+            </div>
+            <p>
+            Upozorňujeme, že rezervace je vždy nezávazná a pokud si ji nevyzvednete do 3 pracovních dnů
+            od potvrzení možnosti vyzvednutí, rezervace propadá a je nutné ji provést znovu, nebo se domluvit na prodloužení.
+            </p>
+        </div>
+
+        <div class="description__box">
+            <div class="description__icon">
+                <img src="/images/rezervace/icons8-checkmark-64.png">
+            </div>
+            <p>
+            V případě větších rezervací Vás budeme při zpracovávání rezervace kontaktovat kvůli upřesnění
+            termínu vyzvednutí. 
+            </p>
+        </div>
+
+    </div>
+
+    <form class="form__form">
+
+        <div class="form__field">
+            <label for ="name">Jméno: *</label>
+            <br><input type="text" id="name" size="40" max-length="20" placeholder="Křestní jméno" required> 
+        </div>
+
+        <div class="form__field">
+            <label for ="surname">Příjmení: *</label> 
+            <br><input type="text" id="surname" size="40" maxlength="35" placeholder="Příjmení" required>
+        </div>
+
+        <div class="form__field">
+            <label for ="email">E-mail: *</label>
+            <br><input type="text" id="email" size="40" maxlength="30" placeholder="@" required>
+        </div>
+
+        <div class="form__field">
+            <label for ="number">Telefon: * </label>
+            <br><input type="tel" id="phone" size="40" maxlength="16" placeholder="+420 xxx xxx xxx" required>
+        </div>
+
+        <div class="form__field">
+            <label for ="rezervace">Detaily nákupu: *</label>
+            <br><textarea name="reservation_details" id="reservation_details" maxlength="200" rows="10" placeholder="Zde popište svou objednávku" required></textarea>
+            <br>
+            <div class="form__button">
+                <button class="reservation__button" type="submit" name="reservation_submit" id="reservation_submit">Odeslat</button>
+            </div>
+        </div>
+
+        
+    </form>
+
+</div>

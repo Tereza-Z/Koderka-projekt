@@ -1,0 +1,32 @@
+html { box-sizing: border-box; }
+*, ::before, ::after { box-sizing: inherit; }
+
+body, html {
+    height:100%;
+    margin: 0;
+}
+
+.wrapper {
+    margin: 20px auto;
+    width: 70vw;
+    background-color:  rgba(28, 28, 28, 0.888);
+    padding: 0 20px 0 20px;
+    color: rgb(200, 200, 200);
+}
+
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    background-image: url(/images/onas/pexels-cromagnon-11092719.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: rgb(10, 10, 10);  
+    padding: 20px 30px;
+}
+
+.main {
+    margin: auto;
+}
+
